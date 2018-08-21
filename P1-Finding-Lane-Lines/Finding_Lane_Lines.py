@@ -130,8 +130,8 @@ def check_lane(img, current_line, new_line):
     # New line positions
     nx1, ny1, nx2, ny2 = new_line[0]
     nx3, ny3, nx4, ny4 = new_line[1]
-    cv2.line(img, (nx1, ny1), (nx2, ny2), [0, 255, 255], 2)
-    cv2.line(img, (nx3, ny3), (nx4, ny4), [0, 255, 255], 2)
+    cv2.line(img, (nx1, ny1), (nx2, ny2), [255, 0, 255], 2)
+    cv2.line(img, (nx3, ny3), (nx4, ny4), [255, 0, 255], 2)
 
     # Turn two short lines into one long extended line
     if nx1 != 0:  # two lines found
@@ -214,20 +214,17 @@ def process_image(image):
     ysize = image.shape[0]
     xsize = image.shape[1]
 
-    # Grayscale conversion
-    gray = grayscale(image)
-
     # Gaussian blur and edges detection
     blur_gray = gaussian_blur(image, 11)
     edges = canny(blur_gray, 30, 50)
 
     # Define interest region
-    apex_y = 340
-    vertices = np.array([[(100, ysize), (430, apex_y), (540, apex_y), (xsize, ysize)]], dtype=np.int32)
+    apex_y = 3/5 * ysize
+    vertices = np.array([[(0, ysize), (0.4*xsize, apex_y), (0.6*xsize, apex_y), (xsize, ysize)]], dtype=np.int32)
     masked_edges = region_of_interest(edges, vertices)
 
     # Hough lines transform
-    line_image = hough_lines(masked_edges, 3, np.pi/180, threshold=10, min_line_len=40, max_line_gap=25)
+    line_image = hough_lines(masked_edges, 3, np.pi/180, threshold=10, min_line_len=45, max_line_gap=35)
 
     # Combine found line image and initial image
     result = weighted_img(line_image, image, α=0.8, β=1)
