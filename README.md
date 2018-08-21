@@ -9,7 +9,7 @@
 - 5,
 
 ## Demonstration
-### 1. Finding Lane Lines
+### 1. [Finding Lane Lines](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P1-Finding-Lane-Lines)
 Use basic computer vision techniques, Canny Edge Detection and Hough Transform for instance, to detect lanes in some video streams taken from a running car.
 #### Video demonstration
 [![Video demonstration](https://img.youtube.com/vi/aPmJB-JDuP0/0.jpg)](https://www.youtube.com/watch?v=aPmJB-JDuP0)
