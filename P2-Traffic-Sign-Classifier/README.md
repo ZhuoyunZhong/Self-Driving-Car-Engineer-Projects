@@ -88,27 +88,29 @@ As a last step, I normalized the image data because it can increase the model tr
 ### Neural Network Architecture
 My final model consisted of the following layers:
 
-	| Layer         		|     Description	        					|
-	|:---------------------:|:---------------------------------------------:| 
-	| Input         		| 32x32x3 RGB image   							| 
-	| Convolution 5x5/10fm  | 1x1 stride, valid padding, outputs 28x28x10 	|
-	| Batch normalization   |												|
-	| RELU					|												|
-	| Max pooling	      	| 2x2 stride, same padding, outputs 14x14x64 	|
-	| Convolution 3x3/20fm  | 1x1 stride, valid padding, outputs 12x12x20 	|
-	| Batch normalization   |												|
-	| RELU					|												|
-	| Max pooling	      	| 2x2 stride, same padding, outputs 6x6x20		|
-	| Flatten				| outputs 720 									|
-	| Fully connected 160	| outputs 160        							|
-	| Batch normalization   |												|
-	| RELU					|												|
-	| Fully connected 120	| outputs 120        							|
-	| Batch normalization   |												|
-	| RELU					|												|
-	| Fully connected 43	| outputs 43        							|
-	| Batch normalization   |												|
-	| Softmax				|												|
+```
+| Layer         		|     Description	        					|
+|:---------------------:|:---------------------------------------------:| 
+| Input         		| 32x32x3 RGB image   							| 
+| Convolution 5x5/10fm  | 1x1 stride, valid padding, outputs 28x28x10 	|
+| Batch normalization   |												|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride, same padding, outputs 14x14x64 	|
+| Convolution 3x3/20fm  | 1x1 stride, valid padding, outputs 12x12x20 	|
+| Batch normalization   |												|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride, same padding, outputs 6x6x20		|
+| Flatten				| outputs 720 									|
+| Fully connected 160	| outputs 160        							|
+| Batch normalization   |												|
+| RELU					|												|
+| Fully connected 120	| outputs 120        							|
+| Batch normalization   |												|
+| RELU					|												|
+| Fully connected 43	| outputs 43        							|
+| Batch normalization   |												|
+| Softmax				|												|
+```
 
 I choose LeNet architecture to start my project because it is a classical well-known network to identify letters. It is not complex, fast to train and still powerful. 
 
@@ -160,14 +162,15 @@ usually, the wrongly predicted images are those with complicated backgroud and u
 
 Here are the results of the prediction:
 
-	| Image			        |     Prediction	        					| 
-	|:---------------------:|:---------------------------------------------:| 
-	| Speed limit (60km/h)  | Speed limit (60km/h)   						| 
-	| Priority road     	| Priority road 								|
-	| Stop					| Stop											|
-	| No entry	      		| No entry					 					|
-	| Ahead only			| Ahead only      								|
-
+```
+| Image			        |     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Speed limit (60km/h)  | Speed limit (60km/h)   						| 
+| Priority road     	| Priority road 								|
+| Stop					| Stop											|
+| No entry	      		| No entry					 					|
+| Ahead only			| Ahead only      								|
+```
 
 The model was able to correctly guess all traffic signs, which gives an accuracy of 100%, which is much better than the result of checking on test set. 
 
