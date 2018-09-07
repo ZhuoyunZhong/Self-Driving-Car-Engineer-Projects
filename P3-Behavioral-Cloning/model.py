@@ -1,13 +1,45 @@
 # Building and Training Network
-import pickle
+import csv
+import matplotlib.image as mpimg
 import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.utils import shuffle
 from keras.models import Sequential, load_model
 from keras.layers.core import Flatten, Dense, Lambda, Dropout
 from keras.layers.convolutional import Convolution2D, MaxPooling2D, Cropping2D
 from loss_history import LossHistory
 
 
-def behavioral_cloning_model(X_train, y_train):
+def counter():
+    while 1:
+        for count in range(4):
+            yield count
+count = counter()
+
+# Load data set
+samples = []
+# Load Track1
+with open('./data/Track1/driving_log.csv') as f:
+    reader = csv.reader(f)
+    for line in reader:
+        if float(line[3]) == 0:
+            if not count.__next__():
+                continue
+        samples.append(line)
+# Load Track2
+with open('./data/Track2/driving_log.csv') as f:
+    reader = csv.reader(f)
+    for line in reader:
+        samples.append(line)
+# Load Enhance Data
+with open('./data/Enhance/driving_log.csv') as f:
+    reader = csv.reader(f)
+    for line in reader:
+        samples.append(line)
+train_samples, validation_samples = train_test_split(samples, test_size=0.2)
+
+
+def behavioral_cloning_model():
     # Transfer learning: AlexNet
     model = Sequential()
 
@@ -40,36 +72,54 @@ def behavioral_cloning_model(X_train, y_train):
     model.add(Dropout(rate=0.5))
     # Dense 1  #Modified
     model.add(Dense(1))
-
+    
+    # Loss function and optimizer method
     model.compile(loss='mse', optimizer='adam')
 
-    history = LossHistory()
-    model.fit(X_train, y_train, validation_split=0.2, shuffle=True, epochs=30, batch_size=128,
-                    verbose=2, callbacks=[history])
+    return model
 
-    # Plot tranning history
+
+def generator(samples, batch_size=128):
+    while 1:  # Loop forever so the generator never terminates
+        shuffle(samples)
+        for offset in range(0, len(samples), batch_size):
+            batch_samples = samples[offset:offset + batch_size]
+
+            images = []
+            angles = []
+            for batch_sample in batch_samples:
+                center_image = mpimg.imread(batch_sample[0])
+                center_angle = float(batch_sample[3])
+                images.append(center_image)
+                angles.append(center_angle)
+
+            X_train = np.array(images)
+            y_train = np.array(angles)
+            yield X_train, y_train
+
+
+if __name__ == '__main__':
+    # Load generator function
+    batch_size = 256
+    train_generator = generator(train_samples, batch_size=batch_size)
+    validation_generator = generator(validation_samples, batch_size=batch_size)
+
+    # Load model
+    retrain = False
+    if not retrain:
+        model = behavioral_cloning_model()
+    else:
+        model = load_model('model.h5')
+    history = LossHistory()
+
+    # Start training
+    model.fit_generator(train_generator, steps_per_epoch=len(train_samples)/batch_size,
+                        validation_data=validation_generator, validation_steps=len(validation_samples)/batch_size,
+                        epochs=15, verbose=2, callbacks=[history])
+    print('training finished')
+
+    # Plot training history
     history.loss_plot('epoch')
 
     # Save Keras model
     model.save('model.h5')
-
-
-if __name__ == '__main__':
-    # Load training data
-    # Separated into 3 files
-
-    with open('dataX0.p', 'rb') as f:
-        X0 = pickle.load(f)
-    with open('dataX1.p', 'rb') as f:
-        X1 = pickle.load(f)
-    with open('datay.p', 'rb') as f:
-        y_train_01 = pickle.load(f)
-    with open('data_enhance.p', 'rb') as f:
-        X2, y_train_2 = pickle.load(f)
-
-    X_train = np.concatenate((X0, X1, X2))
-    y_train = np.concatenate((y_train_01, y_train_2))
-    print(X_train.shape)
-
-    # Apply training
-    behavioral_cloning_model(X_train, y_train)
