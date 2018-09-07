@@ -1,16 +1,16 @@
-#Project: Build a Traffic Sign Recognition Program
+# Project: Build a Traffic Sign Recognition Program
+
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 ![demo](./demonstration/8.png)
 
-
-##Overview
+## Overview
 
 In this project, deep neural networks and convolutional neural networks architecture is built to classify traffic signs. The data set used in this project is [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After the model is trained, a further discussion about model prediction and network visulization is made.
 
 
 
-##The Project
+## The Project
 
 The goals / steps of this project are the following:
 
