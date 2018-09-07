@@ -62,7 +62,7 @@ Use HOG and color histogram features extrated from vehicle and non-vehicle image
 #### Video demonstration:
 <p align="center">
   	<a href="https://www.youtube.com/watch?v=ci_8yStnfUk">
-  		<img src="./demonstration/P5.gif"/>
+  		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p5.gif"/>
 	</a>
 </p>
 
