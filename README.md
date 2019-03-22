@@ -95,12 +95,12 @@ An unscented kalman filter is implemented to estimate the state of a moving obje
 
 
 ---
-### 9. [Unscented Kalman Filter](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P7-Unscented-Kalman-Filter)
+### 9. [PID Control](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P9-PID-Control)
 A PID controller is implemented, which collects data and attempts to minimize the error (CTE in this case) over time by adjustment of a control variable u(t) (steering value in this case).
 
 #### Video demonstration:
 <p align="center">
-  	<a href="https://youtu.be/iN-Bf5Ay5Bc">
+  	<a href="https://youtu.be/-OvcFFYefM8">
   		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p9.gif"/>
 	</a>
 </p>
