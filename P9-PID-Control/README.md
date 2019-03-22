@@ -1,4 +1,4 @@
-# CarND-Controls-PID
+# CarND-PID-Control
 Self-Driving Car Engineer Nanodegree Program
 
 ---
@@ -6,7 +6,7 @@ Self-Driving Car Engineer Nanodegree Program
 ## Result Demonstration
 ### Video demonstration
 
-[![](./video_output/image.png)](https://youtu.be/-OvcFFYefM8)
+[![](https://img.youtube.com/vi/-OvcFFYefM8/0.jpg)](https://youtu.be/-OvcFFYefM8)
 
 
 ## Dependencies
