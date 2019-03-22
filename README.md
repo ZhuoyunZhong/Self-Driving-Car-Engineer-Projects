@@ -7,6 +7,7 @@
 - 3, Behavioral Cloning
 - 4, Advanced Lane Finding
 - 5, Vehicle Detection and Tracking
+- 6, Extended Kalman Filter
 
 ## Demonstration
 
