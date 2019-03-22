@@ -8,6 +8,8 @@
 - 4, Advanced Lane Finding
 - 5, Vehicle Detection and Tracking
 - 6, Extended Kalman Filter
+- 7, Unscented Kalman Filters
+- 9, PID Control
 
 ## Demonstration
 
@@ -68,17 +70,37 @@ Use HOG and color histogram features extrated from vehicle and non-vehicle image
 </p>
 
 
-
-###
-
-
 ---
 ### 6. [Extended Kalman Filter](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P6-Extended-Kalman-Filter)
-A kalman filter is implemented to estimate the state of a moving object of interest with noisy lidar and radar measurements.
+An extended kalman filter is implemented to estimate the state of a moving object of interest with noisy lidar and radar measurements.
 
 #### Video demonstration:
 <p align="center">
   	<a href="https://youtu.be/iN-Bf5Ay5Bc">
   		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p6.gif"/>
+	</a>
+</p>
+
+
+---
+### 7. [Unscented Kalman Filter](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P7-Unscented-Kalman-Filter)
+An unscented kalman filter is implemented to estimate the state of a moving object of interest with noisy lidar and radar measurements.
+
+#### Video demonstration:
+<p align="center">
+  	<a href="https://youtu.be/iN-Bf5Ay5Bc">
+  		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p7.gif"/>
+	</a>
+</p>
+
+
+---
+### 9. [Unscented Kalman Filter](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P7-Unscented-Kalman-Filter)
+A PID controller is implemented, which collects data and attempts to minimize the error (CTE in this case) over time by adjustment of a control variable u(t) (steering value in this case).
+
+#### Video demonstration:
+<p align="center">
+  	<a href="https://youtu.be/iN-Bf5Ay5Bc">
+  		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p9.gif"/>
 	</a>
 </p>
