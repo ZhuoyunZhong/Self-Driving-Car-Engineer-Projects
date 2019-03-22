@@ -69,3 +69,15 @@ Use HOG and color histogram features extrated from vehicle and non-vehicle image
 
 
 ###
+
+
+---
+### 6. [Extended Kalman Filter](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P6-Extended-Kalman-Filter)
+A kalman filter is implemented to estimate the state of a moving object of interest with noisy lidar and radar measurements.
+
+#### Video demonstration:
+<p align="center">
+  	<a href="https://youtu.be/iN-Bf5Ay5Bc">
+  		<img src="./demonstration/P6.gif"/>
+	</a>
+</p>
