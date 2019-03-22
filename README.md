@@ -79,6 +79,6 @@ A kalman filter is implemented to estimate the state of a moving object of inter
 #### Video demonstration:
 <p align="center">
   	<a href="https://youtu.be/iN-Bf5Ay5Bc">
-  		<img src="./demonstration/P6.gif"/>
+  		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p6.gif"/>
 	</a>
 </p>
