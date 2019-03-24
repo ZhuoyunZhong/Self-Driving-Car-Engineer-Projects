@@ -10,6 +10,7 @@
 - 6, Extended Kalman Filter
 - 7, Unscented Kalman Filters
 - 9, PID Control
+- 10, Model Predictive Control
 
 ## Demonstration
 
@@ -102,5 +103,17 @@ A PID controller is implemented, which collects data and attempts to minimize th
 <p align="center">
   	<a href="https://youtu.be/-OvcFFYefM8">
   		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p9.gif"/>
+	</a>
+</p>
+
+
+---
+### 10. [Model Pridictive Control](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P10-MPC)
+A Model Pridictive Controller (MPC) is implemented, which differs from PID control that is an optimized problem, but simulates different actuators input and predicts future vehicle trajectory in order to find the best trajectory with a minimum cost. The vehicle model used is constant turn rate and velocity model.
+
+#### Video demonstration:
+<p align="center">
+  	<a href="https://youtu.be/8qw0ykeOhuI">
+  		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p10.gif"/>
 	</a>
 </p>
