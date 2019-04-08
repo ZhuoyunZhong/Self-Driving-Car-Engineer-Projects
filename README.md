@@ -9,6 +9,7 @@
 - 5, Vehicle Detection and Tracking
 - 6, Extended Kalman Filter
 - 7, Unscented Kalman Filters
+- 8, Kidnapped Vehicle
 - 9, PID Control
 - 10, Model Predictive Control
 
@@ -73,7 +74,7 @@ Use HOG and color histogram features extrated from vehicle and non-vehicle image
 
 ---
 ### 6. [Extended Kalman Filter](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P6-Extended-Kalman-Filter)
-An extended kalman filter is implemented to estimate the state of a moving object of interest with noisy lidar and radar measurements.
+An Extended Kalman Filter is implemented to estimate the state of a moving object of interest with noisy lidar and radar measurements.
 
 #### Video demonstration:
 <p align="center">
@@ -85,12 +86,24 @@ An extended kalman filter is implemented to estimate the state of a moving objec
 
 ---
 ### 7. [Unscented Kalman Filter](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P7-Unscented-Kalman-Filter)
-An unscented kalman filter is implemented to estimate the state of a moving object of interest with noisy lidar and radar measurements.
+An Unscented Kalman Filter is implemented to estimate the state of a moving object of interest with noisy lidar and radar measurements.
 
 #### Video demonstration:
 <p align="center">
   	<a href="https://youtu.be/F7sMPR5R4yI">
   		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p7.gif"/>
+	</a>
+</p>
+
+
+---
+### 8. [Kidnapped Vehicle](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P8-Kidnapped-Vehicle)
+An Particle Filter is implemented to estimate the location of a lost vehicle with noisy initial GPS data, vehicle controls and noisy landmark observations.
+
+#### Video demonstration:
+<p align="center">
+  	<a href="https://youtu.be/fUX9pNs2IIY">
+  		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p8.gif"/>
 	</a>
 </p>
 
@@ -108,8 +121,8 @@ A PID controller is implemented, which collects data and attempts to minimize th
 
 
 ---
-### 10. [Model Pridictive Control](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P10-MPC)
-A Model Pridictive Controller (MPC) is implemented, which differs from PID control that is an optimized problem, but simulates different actuators input and predicts future vehicle trajectory in order to find the best trajectory with a minimum cost.
+### 10. [Model Predictive Control](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P10-MPC)
+A Model Predictive Controller (MPC) is implemented, which differs from PID control that is an optimized problem, but simulates different actuators input and predicts future vehicle trajectory in order to find the best trajectory with a minimum cost.
 
 #### Video demonstration:
 <p align="center">
