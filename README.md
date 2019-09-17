@@ -22,19 +22,17 @@ Use basic computer vision techniques, Canny Edge Detection and Hough Transform f
 #### Video demonstration:
 <p align="center">
   	<a href="https://www.youtube.com/watch?v=6csFn21axXY">
-  		<img src="./demonstration/P1.gif"/>
+  		<img src="./demonstration/p1.gif"/>
 	</a>
 </p>
-
 
 ---
 ### 2. [Traffic Sign Classifier](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P2-Traffic-Sign-Classifier)
 Classify 43 classes of traffic signs from data set "[GTSRB](http://benchmark.ini.rub.de/)" using LeNet deep neural network architecture with the help of TensorFlow.
 
 <p align="center">
-  	<img src="./demonstration/P2.png"/>
+  	<img src="./demonstration/p2.png"/>
 </p>
-
 
 ---
 ### 3. [Behavioral Cloning](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P3-Behavioral-Cloning)
@@ -43,10 +41,9 @@ With the help of Udacity Self-Driving Car Simulator, implement a deep neural net
 #### Video demonstration:
 <p align="center">
   	<a href="https://www.youtube.com/watch?v=8Yym71D-72U">
-  		<img src="./demonstration/P3.gif"/>
+  		<img src="./demonstration/p3.gif"/>
 	</a>
 </p>
-
 
 ---
 ### 4. [Advanced Lane Finding](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P4-Advanced-Lane-Finding)
@@ -55,10 +52,9 @@ Use advanced computer vision algorithm such as Sobel Edge Detection, Perspective
 #### Video demonstration:
 <p align="center">
   	<a href="https://www.youtube.com/watch?v=u_qY0bvhmsg">
-  		<img src="./demonstration/P4.gif"/>
+  		<img src="./demonstration/p4.gif"/>
 	</a>
 </p>
-
 
 ---
 ### 5. [Vehicle Detection and Tracking](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P5-Vehicle-Detection-And-Tracking)
@@ -71,7 +67,6 @@ Use HOG and color histogram features extrated from vehicle and non-vehicle image
 	</a>
 </p>
 
-
 ---
 ### 6. [Extended Kalman Filter](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P6-Extended-Kalman-Filter)
 An Extended Kalman Filter is implemented to estimate the state of a moving object of interest with noisy lidar and radar measurements.
@@ -82,7 +77,6 @@ An Extended Kalman Filter is implemented to estimate the state of a moving objec
   		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p6.gif"/>
 	</a>
 </p>
-
 
 ---
 ### 7. [Unscented Kalman Filter](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P7-Unscented-Kalman-Filter)
@@ -95,7 +89,6 @@ An Unscented Kalman Filter is implemented to estimate the state of a moving obje
 	</a>
 </p>
 
-
 ---
 ### 8. [Kidnapped Vehicle](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P8-Kidnapped-Vehicle)
 An Particle Filter is implemented to estimate the location of a lost vehicle with noisy initial GPS data, vehicle controls and noisy landmark observations.
@@ -106,7 +99,6 @@ An Particle Filter is implemented to estimate the location of a lost vehicle wit
   		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p8.gif"/>
 	</a>
 </p>
-
 
 ---
 ### 9. [PID Control](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P9-PID-Control)
@@ -119,7 +111,6 @@ A PID controller is implemented, which collects data and attempts to minimize th
 	</a>
 </p>
 
-
 ---
 ### 10. [Model Predictive Control](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P10-MPC)
 A Model Predictive Controller (MPC) is implemented, which differs from PID control that is an optimized problem, but simulates different actuators input and predicts future vehicle trajectory in order to find the best trajectory with a minimum cost.
@@ -128,5 +119,17 @@ A Model Predictive Controller (MPC) is implemented, which differs from PID contr
 <p align="center">
   	<a href="https://youtu.be/8qw0ykeOhuI">
   		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p10.gif"/>
+	</a>
+</p>
+
+### 11. [Path Planning](https://github.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/tree/master/P11-Path-Planning)
+
+In the project, a vehicle navigates safely around a virtual highway with other traffic that is driving +-10 MPH of the 50 MPH speed limit. The path planner uses localization and sensor fusion data to generate a smooth and comfortable trajectory.
+
+#### Video demonstration:
+
+<p align="center">
+  	<a href="https://youtu.be/PJqq0DKkakM">
+  		<img src="https://raw.githubusercontent.com/joeyzhong90595/Self-Driving-Car-Engineer-Projects/master/demonstration/p11.gif"/>
 	</a>
 </p>
