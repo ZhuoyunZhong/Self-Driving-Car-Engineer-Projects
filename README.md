@@ -22,7 +22,7 @@ Use basic computer vision techniques, Canny Edge Detection and Hough Transform f
 #### Video demonstration:
 <p align="center">
   	<a href="https://www.youtube.com/watch?v=6csFn21axXY">
-  		<img src="./demonstration/p1.gif"/>
+  		<img src="./demonstration/P1.gif"/>
 	</a>
 </p>
 
@@ -31,7 +31,7 @@ Use basic computer vision techniques, Canny Edge Detection and Hough Transform f
 Classify 43 classes of traffic signs from data set "[GTSRB](http://benchmark.ini.rub.de/)" using LeNet deep neural network architecture with the help of TensorFlow.
 
 <p align="center">
-  	<img src="./demonstration/p2.png"/>
+  	<img src="./demonstration/P2.png"/>
 </p>
 
 ---
@@ -41,7 +41,7 @@ With the help of Udacity Self-Driving Car Simulator, implement a deep neural net
 #### Video demonstration:
 <p align="center">
   	<a href="https://www.youtube.com/watch?v=8Yym71D-72U">
-  		<img src="./demonstration/p3.gif"/>
+  		<img src="./demonstration/P3.gif"/>
 	</a>
 </p>
 
@@ -52,7 +52,7 @@ Use advanced computer vision algorithm such as Sobel Edge Detection, Perspective
 #### Video demonstration:
 <p align="center">
   	<a href="https://www.youtube.com/watch?v=u_qY0bvhmsg">
-  		<img src="./demonstration/p4.gif"/>
+  		<img src="./demonstration/P4.gif"/>
 	</a>
 </p>
 
